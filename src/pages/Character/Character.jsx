@@ -15,7 +15,7 @@ const Character = () => {
       try {
         const response = await axios.get(
           // `http://localhost:3000/character/${id}`
-          `http://localhost:3000/comics/${id}`
+          `https://site--marvel-backend--kpzxpq4tbm7j.code.run/comics/${id}`
         );
         setCharacter(response.data);
       } catch (error) {

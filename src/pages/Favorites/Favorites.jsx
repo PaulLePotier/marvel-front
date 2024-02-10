@@ -15,7 +15,9 @@ const Favorites = ({ token, tokenFC }) => {
       try {
         const responses = await Promise.all(
           tokenParse.map((id) =>
-            axios.get(`http://localhost:3000/character/${id}`)
+            axios.get(
+              `https://site--marvel-backend--kpzxpq4tbm7j.code.run/character/${id}`
+            )
           )
         );
         setFavoriteCharacter(responses.map((response) => response.data));
@@ -23,7 +25,9 @@ const Favorites = ({ token, tokenFC }) => {
         console.log("TOKEN COMICS PARSE", tokenParseFC);
         const responsesComics = await Promise.all(
           tokenParseFC.map((id) =>
-            axios.get(`http://localhost:3000/comic/${id}`)
+            axios.get(
+              `https://site--marvel-backend--kpzxpq4tbm7j.code.run/comic/${id}`
+            )
           )
         );
         setFavoriteComics(responsesComics.map((response) => response.data));

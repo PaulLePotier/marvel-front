@@ -35,7 +35,9 @@ const Comics = ({ tokenFC, setTokenFC }) => {
     const fetchData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:3000/comics?skip=${(page - 1) * 100}&title=${query}`
+          `https://site--marvel-backend--kpzxpq4tbm7j.code.run/comics?skip=${
+            (page - 1) * 100
+          }&title=${query}`
         );
         // console.log(data.results);
         setComics(data.results);

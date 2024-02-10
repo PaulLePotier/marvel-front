@@ -37,7 +37,7 @@ const Characters = ({ token, setToken }) => {
     const fetchData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:3000/characters?skip=${
+          `https://site--marvel-backend--kpzxpq4tbm7j.code.run/characters?skip=${
             (page - 1) * 100
           }&name=${query}`
         );
