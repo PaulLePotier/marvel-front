@@ -1,0 +1,30 @@
+.listpersonnage {
+  display: flex;
+  flex-direction: column;
+}
+
+.personnagecard {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.personnagenameandphoto {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.personnagedescription {
+  width: 70%;
+  text-align: left;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+h1 {
+  color: blue;
+}

@@ -1,0 +1,34 @@
+p {
+  color: darkblue;
+}
+
+main img {
+  width: 200px;
+  height: 200px;
+}
+
+.comics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+  margin: 10px;
+}
+
+.comicscard {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  flex-wrap: wrap;
+  justify-content: top;
+  margin: 10px;
+  gap: 20px;
+}
+
+.comicscard div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  gap: 30px;
+}

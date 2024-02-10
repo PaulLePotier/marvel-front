@@ -1,0 +1,21 @@
+header {
+  display: flex;
+
+  background-color: aqua;
+  height: 100px;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 150px;
+  height: 60px;
+}
+
+header div {
+  display: flex;
+  gap: 20px;
+  padding-right: 70px;
+}
